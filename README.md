@@ -76,33 +76,49 @@ JWT cookie and you need to re-login to get to chatbot.
 
 Now it’s time to play with chatbot, you can greet with chatbot and get some random
 greeting back.
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/greet.png "greet")
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/hay.png "how are you")
+
 You can tell chatbot to show you dentist list
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/list.png "doc list")
+
 You can tell chatbot to show you information about a dentist by name
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/dentist.png "doc info")
 
 You can see schedule of dentists (only available for time of tomorrow)
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/schedule.png "schedule")
+
 Then you can reserve a dentist (You will always need to identify name and time in sharp) and
 get a booking ID, if you cannot reserve at that time, bot will tell you closet time you can
 reserve.
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/book.png "book")
 
 Chat bot will ask you for confirmation
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/book_confirm.png "book_confirm")
+
 Booked time cannot be reserve again and not show on schedule.
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/book2.png "book2")
 
 You can cancel your appointment by state name and time that you reserved
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/cancel.png "cancel")
+
 Or you can user your booking ID to cancel the reservation, by say keyword ID will help bot
 understand you are mention about booking ID not time.
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/cancel_confirm.png "cancel2")
 
 Note: only the user who made reservation can cancel the appointment, you can try to log in
 as another user to test it.
 Finally, HAVE FUN!!!
+
 ![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/redpanda.jpg "redpanda")
 
