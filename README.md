@@ -1,6 +1,6 @@
 # Deployment Instruction
 
-# Step
+# Step 1
 
 Open terminal at directory, run making script to make virtual environment by:
 
