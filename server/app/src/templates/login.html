@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="shortcut icon" href="../static/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/user.js"></script>
+</head>
+<body>
+    <div class="ChatFrame">
+        <div class="Chatlogs" id="Chatlogs">
+            <div class="titile_container">
+                <h1>Log in</h1>
+            </div>
+            <h3>Username:</h3>
+            <div class="username_area">
+                <textarea id="username" name="username_input" required></textarea>
+            </div>
+            <h3>Password:</h3>
+            <div class="username_area">
+                <textarea class="password" id="password" name="password_input" required></textarea>
+            </div>
+            <div class="titile_container">
+                <p><a href="/signup">sign up here</a></p>
+            </div>
+        </div>
+         <div class="login_button">
+             <button type="button" id="login" onclick="login()">Log in</button>
+        </div>
+        <script>
+            window.onload = function(){
+                var username = document.getElementById("username");
+                username.addEventListener("keydown", function(event) {
+                  if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("password").focus();
+                  }
+                });
+                var input = document.getElementById("password");
+                input.addEventListener("keydown", function(event) {
+                  if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("login").click();
+                  }
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>

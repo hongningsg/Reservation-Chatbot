@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="shortcut icon" href="../static/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/chat.js"></script>
+</head>
+<body>
+    <div class="ChatFrame">
+        <div class="Chatlogs" id="Chatlogs">
+
+            <div class="user_chat bot">
+                <div class="user_img">
+                    <img src="../static/image/bot.jpg">
+                </div>
+                <p class="user_msg">What up!</p>
+            </div>
+
+        </div>
+        <div class="chat_input">
+            <textarea id="text" name="text_input" required></textarea>
+            <button type="button" class="logout" id="logout" onclick="logout()">Log out</button>
+            <button type="button" id="send" onclick="sendMsg()">Send</button>
+        </div>
+    </div>
+</body>
+</html>

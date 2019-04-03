@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="shortcut icon" href="../static/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/user.js"></script>
+</head>
+<body>
+    <div class="ChatFrame">
+        <div class="Chatlogs" id="Chatlogs">
+            <div class="titile_container">
+                <h1>Sign up</h1>
+            </div>
+            <h3>Username:</h3>
+            <div class="username_area">
+                <textarea id="signusername" name="username_input" required></textarea>
+            </div>
+            <h3>Password:</h3>
+            <div class="username_area">
+                <textarea class="password" id="signpassword" name="password_input" required></textarea>
+            </div>
+        </div>
+         <div class="login_button">
+             <button type="button" id="signup" onclick="signup()">signup</button>
+        </div>
+        <script>
+            window.onload = function(){
+                var signuser = document.getElementById("signusername");
+                signuser.addEventListener("keydown", function(event) {
+                  if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("signpassword").focus();
+                  }
+                });
+                var signpass = document.getElementById("signpassword");
+                signpass.addEventListener("keydown", function(event) {
+                  if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("signup").click();
+                  }
+                });
+             }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Flask == 1.0.2
+flask_restplus == 0.12.1
+wit == 5.1.0
+flask_jwt_extended == 3.18.0
+requests ==2.18.4
