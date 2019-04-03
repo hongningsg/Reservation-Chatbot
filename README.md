@@ -15,7 +15,7 @@ docker ps
 If you build successfully, jump to step 2.
 
 If you got error of network occupied (either of two error messages):
-
+![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/error1.jpg "Error 1")
 This is because network or IP address is already occupied in your device, to fix this, you could
 remove exists network bridge by follow steps.
 
