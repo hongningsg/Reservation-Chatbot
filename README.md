@@ -20,8 +20,10 @@ This is because network or IP address is already occupied in your device, to fix
 remove exists network bridge by follow steps.
 
 - Check name of running network by:
-    docker network ls
-
+```
+docker network ls
+```
+![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/error2.jpg "Error 2")
 
 Networks whose name other than “bridge”, “host”, “none” are your custom networks, in my
 case, it’s “mynetwork”.
@@ -31,13 +33,14 @@ case, it’s “mynetwork”.
 ```
 docker network inspect [your network name]
 ```
-
+![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/error3.jpg "Error 3")
 - Since I am using IP address (172.18.0.0/16), so you may need to remove the one whose
     subnet IP address is the same by:
 
 ```
 docker network rm [your network name]
 ```
+![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/error4.jpg "Error 4")
 - Ran script may already started some container, you may need to remove them
 - After clear the way, re-run script:
 ```
@@ -47,7 +50,7 @@ docker network rm [your network name]
 
 
 Structure of the microservices:
-
+![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/Schema.png "Scturcture")
 Back end service run on http://127.0.0.1:
 Doctor Information API Service run on http://127.0.0.1:
 Timeslot Reservation API Service run on http://127.0.0.1:
@@ -63,7 +66,7 @@ Finally, you can go to http://127.0.0.1:9102 and play with chatbot.
 
 Server uses JWT cookie to authenticate user, you will be redirected to Login page if you do
 not have a valid token.
-
+![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/login.png "login")
 You can always go to [http://127.0.0.1:9102/login](http://127.0.0.1:9102/login) to log in or go to
 [http://127.0.0.1:9102/signup](http://127.0.0.1:9102/signup) to register. By click log out inside chatbot UI will remove your
 JWT cookie and you need to re-login to get to chatbot.
@@ -73,7 +76,7 @@ JWT cookie and you need to re-login to get to chatbot.
 
 Now it’s time to play with chatbot, you can greet with chatbot and get some random
 greeting back.
-
+![alt text](https://github.com/hongningsg/Reservation-Chatbot/blob/master/imgs/greet.png "greet")
 
 You can tell chatbot to show you dentist list
 
